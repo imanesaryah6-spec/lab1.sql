@@ -7,3 +7,41 @@
 <img width="959" height="515" alt="Capture d&#39;écran 2026-10-31 235948" src="https://github.com/user-attachments/assets/dc3b68f6-3650-4c41-b03f-8164dbf4ee95" />
 <img width="946" height="522" alt="Capture d&#39;écran 2026-11-01 000620" src="https://github.com/user-attachments/assets/54244baa-8fa9-4244-a48d-cfdef501b43a" />
 <img width="930" height="494" alt="Capture d&#39;écran 2026-11-01 001620" src="https://github.com/user-attachments/assets/831b995b-696f-4138-b8cf-035981327616" />
+# Lab SQL - Projet de Gestion d'Utilisateurs
+
+Ce projet présente la mise en place d'une base de données MySQL structurée selon les exigences du lab.
+
+---
+
+### Étape 1 : Création de la base de données
+* **Description :** Création de la base de données `testdb` avec l'encodage `utf8mb4` pour supporter tous les caractères spéciaux et les accents, suivie de sa sélection avec la commande `USE`.
+* **Capture d'écran :**
+  ![Étape 1](chemin_vers_image1.png)
+
+---
+
+### Étape 2 : Création de la table
+* **Description :** Création de la table `utilisateur` contenant les colonnes `id` (clé primaire auto-incrémentée), `nom`, et `email` (unique), en utilisant le moteur de stockage `InnoDB`.
+* **Capture d'écran :**
+  ![Étape 2](chemin_vers_image2.png)
+
+---
+
+### Étape 3 : Insertion des données
+* **Description :** Insertion de trois enregistrements de test (utilisateurs) dans la table `utilisateur` pour valider la structure et le bon fonctionnement des insertions.
+* **Capture d'écran :**
+  ![Étape 3](chemin_vers_image3.png)
+
+---
+
+### Étape 4 : Création des index
+* **Description :** Création d'un index (`idx_email`) sur la colonne `email` afin d'optimiser et d'accélérer la vitesse des recherches et des requêtes.
+* **Capture d'écran :**
+  ![Étape 4](chemin_vers_image4.png)
+
+---
+
+### Étape 5 : Gestion des privilèges
+* **Description :** Création d'un utilisateur dédié `app_user` et attribution de privilèges restreints (`SELECT`, `INSERT`, `UPDATE`, `DELETE`) uniquement sur la base `testdb` pour des raisons de sécurité.
+* **Capture d'écran :**
+  ![Étape 5](chemin_vers_image5.png)
